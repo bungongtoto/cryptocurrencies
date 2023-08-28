@@ -7,10 +7,11 @@ export type Crypto = {
     symbol: string;
     high_24h: number;
     low_24h: number;
-  
+    owned: number;
   };
 
 
 export type AppProps = {
     crypto: Crypto;
+    updateOwned: (crypto: Crypto, amount: number) => void;
 };
